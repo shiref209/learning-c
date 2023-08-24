@@ -149,5 +149,29 @@ int main()
     // }
     // cout << "Common divisor is :" << divisor;
 
+    // test
+    int arr[10] = {1, 2, 3, 5, 1, 5, 20, 2, 12, 10};
+
+    for (int j = 0; j < 10; j++)
+    {
+        int uniq;
+        for (int i = 0; i < 10; i++)
+        {
+            if (arr[j] == arr[i] && i != j)
+            {
+                uniq = 999;
+                break;
+            }
+            else
+            {
+                uniq = arr[j];
+            }
+        }
+        if (uniq != 999)
+        {
+            cout << uniq << endl;
+        }
+    }
+
     return 0;
 }
