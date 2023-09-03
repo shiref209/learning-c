@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-vector getNums(int num)
+vector<int> getNums(int num)
 {
     vector<int> nums;
     while (num > 0)
